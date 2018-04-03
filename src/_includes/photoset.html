@@ -1,0 +1,12 @@
+<div class="photoset">
+    
+    <div class="photoset-row">
+        {% for photo in photos %}
+        <figure class="photoset-item">
+            <img src="/images/photos/{{page.photoset-name}}/{{photo.photo}}.jpg" class="img-responsive" alt="" title="" />
+            <figcaption></figcaption>
+        </figure>
+        {% endfor %}
+    </div>
+
+</div>

@@ -1,0 +1,19 @@
+footer {
+	background-color: $secondarycolor;
+	color: $white;
+	padding-top: 1.25em;
+	padding-bottom: 1.22em;
+}
+
+footer a {
+	color: $white;
+}
+
+.footer-container {
+	@include container;
+	font-size: .8em;
+		@include breakpoint($mobile) {
+			padding-left: 1em;
+      		padding-right: 1em;
+		}
+}

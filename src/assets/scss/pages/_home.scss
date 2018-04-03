@@ -1,0 +1,88 @@
+.home-hero-image {
+
+}
+
+.home-hero-arrow {
+	@include container;
+	text-align: center;
+}
+
+.home-main {
+	@include push(1);
+	@include span(3 of 12);
+		@include breakpoint($mobile) {
+			@include span(12);
+      		padding-left: 1em;
+      		padding-right: 1em;
+      			h1 {
+      				font-size: 1.5em;
+      			}
+		}
+}
+
+.home-article-listing {
+	@include span(8 of 12 last);
+	  padding-left: 2em;
+		@include breakpoint($mobile) {
+      		@include span(12);
+      		padding-left: 1em;
+      		padding-right: 1em;
+  	}
+  		@include breakpoint($tablet) {
+  			padding-left: 1em;
+      		padding-right: 1em;
+  		}
+}
+
+.home-article-listing h1 {
+	font-family: $condensed-font-family;
+    font-weight: bold;
+}
+
+.home-see-all {
+	@include span(12 last);
+}
+
+.home-see-all h3 {
+    font-family: $condensed-font-family;
+    font-weight: bold;
+}
+
+.home-post {
+	@include span(9 of 12);
+	margin-bottom: 15px;
+		h2 {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			font-family: $condensed-font-family;
+			font-weight: bold;
+			font-size: 18px;
+		}
+		@include breakpoint($mobile) {
+			@include span(12 last);
+		}
+}
+
+.home-post-date {
+	@include push(1)
+	@include span(2 last);
+	background-color: $light-gray;
+	border: solid 2px $medium-gray;
+	color: $medium-gray;
+	font-size: .9em;
+	font-family: $condensed-font-family;
+	font-weight: bold;
+	padding: 1px;
+	text-align: center;
+}
+
+.external {
+	border-left: solid 8px $light-gray;
+	padding-left: .8em;
+		@include breakpoint($tablet) {
+			margin: 3px 0px 0px 0px;
+			border-left: solid 4px $light-gray;
+			padding-left: .6em;
+		}
+}
+

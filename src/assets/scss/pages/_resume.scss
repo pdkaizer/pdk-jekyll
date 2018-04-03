@@ -1,0 +1,52 @@
+.resume {
+	@include push(1);
+	@include span(8);
+}
+
+.resume section {
+	margin-top: 2em;
+}
+
+.resume section h2, h3, h4 {
+	font-weight: bold;
+}
+
+.resume section ul {
+	list-style-type: disc;
+	margin-left: 2em;
+}
+
+.resume-print a {
+	color: $white;
+}
+
+.skills-grid {
+
+}
+
+.skills-col-1 {
+		@include span(4);
+		@include breakpoint($mobile) {
+			@include span(12);
+      		padding-left: 1em;
+      		padding-right: 1em;
+      	}
+}
+
+.skills-col-2 {
+		@include span(4);
+		@include breakpoint($mobile) {
+			@include span(12);
+      		padding-left: 1em;
+      		padding-right: 1em;
+      	}
+}
+
+.skills-col-3 {
+		@include span(4 last);
+		@include breakpoint($mobile) {
+			@include span(12);
+      		padding-left: 1em;
+      		padding-right: 1em;
+      	}
+}

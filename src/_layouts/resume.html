@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+	<div class="page-area">
+    <div class="resume">
+      {{ content }}
+    </div>
+    <div class="resume-print">
+      <button><a href="/resume/{{page.print-URL}}.pdf">{{page.print-button}}</a></button>
+    </div>
+	</div>
+	
+  {% include footer.html %}
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script src="/js/navigation.js"></script>
+
+  <!-- JS -->
+  <!-- inject:js -->
+  <!-- endinject -->
+
+</body>
+
+</html>

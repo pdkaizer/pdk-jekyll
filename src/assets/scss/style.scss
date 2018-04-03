@@ -1,0 +1,47 @@
+/*
+The main SCSS file for everything, yep
+*/
+
+/*--------------------------------------------------------------
+# Import libraries
+--------------------------------------------------------------*/
+@import 'base/normalize';
+@import 'lib/bourbon/bourbon';
+@import "lib/susy/susy";
+@import "lib/breakpoint/breakpoint";
+@import "https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700|Open+Sans:400,700,400italic,700italic";
+
+/*--------------------------------------------------------------
+# Base styles
+--------------------------------------------------------------*/
+@import "base/variables";
+@import "base/sitewide";
+@import "base/typography";
+@import "components/buttons";
+@import "components/forms";
+@import "components/lists";
+@import "components/tables";
+
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+@import "utilities/utilities";
+@import "utilities/mixins";
+
+/*--------------------------------------------------------------
+# Layout styles
+--------------------------------------------------------------*/
+@import "layout/grid-settings";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/page-body";
+@import "layout/navigation";
+
+/*--------------------------------------------------------------
+# Page specific styles
+--------------------------------------------------------------*/
+@import "pages/home";
+@import "pages/photos";
+@import "pages/resume";
+@import "pages/portfolio";

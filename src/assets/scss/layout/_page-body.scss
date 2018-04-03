@@ -1,0 +1,105 @@
+.page-area {
+	@include container;
+	margin-top: 1.5em;
+  margin-bottom: 2.5em;
+    @include breakpoint($mobile) {
+      margin-top: 0;
+      margin-bottom: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+}
+
+.left-side {
+  @include push(1);
+  @include span(3);
+    @include breakpoint($mobile) {
+      @include span(12);
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.article-area {
+	@include span(8 last);
+    padding-left: 1em;
+    h1 {
+      font-family: $condensed-font-family;
+      font-weight: bold;
+    }
+    @include breakpoint($mobile) {
+      @include span(12);
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+}
+
+article p {
+	font-size: 1em;
+}
+
+.article-listing {
+	@include span(5);
+		@include breakpoint($mobile) {
+      		@include span(12);
+  	}
+}
+
+.social {
+  margin-top: 30px;
+}
+
+.social a {
+  text-decoration: none; }
+
+.social ul li {
+  float: left;
+  list-style-type: none;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+.social p {
+	font-size: .70em;
+  clear: both;
+}
+
+.post-content {
+  @include span(9 of 12);
+      h1, h2 {
+      font-family: $condensed-font-family;
+      font-weight: bold;
+    }
+      @include breakpoint($mobile) {
+        @include span(12);
+      }
+}
+
+.post-meta {
+  @include push(1)
+  @include span(2 last);
+  background-color: $light-gray;
+  border: solid 2px $medium-gray;
+  color: $medium-gray;
+  font-family: $condensed-font-family;
+  font-weight: bold;
+  padding: 1px;
+  text-align: center;
+}
+
+.comment-area {
+  @include span(9 of 12);
+  margin-top: 1em;
+    @include breakpoint($mobile) {
+      @include span(12);
+    }
+}
+
+.portfolio ul {
+  list-style-type: disc;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+.portfolio h2 {
+  font-weight: 400;
+}

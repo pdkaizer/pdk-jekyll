@@ -1,0 +1,41 @@
+---
+layout: default
+title: 'Contact Peter Kaizer'
+header-image: typewriter.jpg
+---
+
+{% include header-image.html %}
+
+<div class="page-area">
+    <section class="left-side">
+        {% include social.html %} 
+    </section>
+
+    <section class="article-area">
+        <article itemscope itemtype="//schema.org/BlogPosting">
+
+          <h1>Contact me</h1>
+
+          <p>You can contact me using the form below.</p>
+
+                <form accept-charset="UTF-8" action="//formkeep.com/f/bc39663a56cd" method="POST" role="form">
+          			<input type="hidden" name="utf8" value="✓">
+                
+                <label for="name">Name:</label>
+                  <input type="email" name="name" placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                  <input type="email" name="email" placeholder="Email">
+
+                <label for="url">URL:</label>
+                  <input type="url" name="url" placeholder="Your Website">
+
+                <label for="message">Message:</label>
+                  <textarea class="form-control" name="message" placeholder="Your message here..." rows="5"></textarea>
+                <button type="submit" class="btn btn-default">Contact me</button>
+
+                </form>
+
+        </article>
+    </section>
+</div>

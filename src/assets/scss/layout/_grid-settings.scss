@@ -1,0 +1,13 @@
+
+// Susy grid settings and breakpoints
+$susy: (
+  columns: 12, 
+  container: 1080px,
+  gutters: 0.30,
+  global-box-sizing: border-box,
+  );
+	
+$desktop: 1080px 3000px;
+$tablet: 650px 1100px;
+$mobile: 280px 650px;
+

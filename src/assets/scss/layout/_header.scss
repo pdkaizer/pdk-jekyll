@@ -1,0 +1,110 @@
+header {
+	background-color: $secondarycolor;
+	color: $white;
+	padding-top: 5px;
+	padding-bottom: 0;
+}
+
+.header-container {
+	@include container;
+}
+
+.header-logo {
+	@include span(1); 
+		@include breakpoint($mobile) {
+			@include span(2);
+			padding-left: 5px;
+		}
+		@include breakpoint($tablet) {
+			@include span(2);
+		}
+}
+
+.header-name {
+	@include span(3);
+	margin-top: 1.5em;
+		h1 {
+			font-size: 2em;
+			font-weight: bold;
+			padding-top: 0;
+			padding-bottom: 0;
+			line-height: 0;	
+		}
+
+		h4 {
+			font-size: .9em;
+			font-weight: bold;
+			padding-top: 3px;
+			padding-bottom: 0;
+			line-height: 0;	
+			letter-spacing: .16em;
+		}
+		@include breakpoint($mobile) {
+			@include span(10 last);
+			margin-top: .8em;
+			padding-left: 10px;
+				h1 {
+					font-size: 1.2em;
+					font-weight: bold;
+					padding-top: 0;
+					padding-bottom: 0;
+					line-height: 0;	
+				}	
+
+				h4 {
+					font-weight: bold;
+					padding-top: 3px;
+					padding-bottom: 0;
+					line-height: 0;	
+					letter-spacing: 0;
+				}
+		}
+}
+
+.header-name a {
+	color: $white;
+}
+
+.header-name-left {
+	@include breakpoint($mobile) {
+		@include span(9);
+	}
+}
+
+.header-name-right {
+	@include breakpoint($mobile) {
+		@include span(3 last);
+	}
+}
+
+.header-nav {
+	@include span(8 last);
+	margin-top: .5em;
+		@include breakpoint($mobile) {
+			@include span(12 last);
+			margin-top: .25em;
+			padding-left: .5em;      		
+			padding-right: .5em;
+		}
+}
+
+.header-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.header-nav li {
+	display: inline-block;
+	margin-right: 1.5em;
+	font-family: $condensed-font-family;
+	font-weight: bold;
+	font-size: 16px;
+		@include breakpoint($mobile) {
+			margin-right: 1em;
+			font-size: 14px;
+		}
+}
+
+.header-nav a {
+	color: $white;
+}

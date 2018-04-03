@@ -1,0 +1,190 @@
+// Google Fonts
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,400i,700';
+
+// Typography
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Open Sans', sans-serif;
+$condensed-font-family: 'Open Sans Condensed', sans-serif;
+$basefontsize: 16;
+
+$bodycolor 						: rgb(255,255,255);
+$textcolor 						: rgb(71,63,63);
+
+// Font Sizes
+$base-font-size: 1em;
+$baselineheight: 1.5em;
+$gutterwidth: 24px;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// STEP THREE: COLOUR ================================================
+
+
+// Define your design’s palette by choosing three main colours
+$primarycolor 					: rgb(193,39,44);
+$secondarycolor 				: rgb(74,74,74);
+$tertiarycolor 					: rgb(41,47,54);
+
+
+// Colors
+$red: rgb(193,39,44);
+$dark-gray: rgb(74,74,74);
+$medium-gray: #999;
+$light-gray: #ddd;
+$black: #000;
+$white: #fff;
+
+// Now set a neutral colour for borders etc.
+$neutralcolor 					: rgb(71,63,63);
+$midneutralcolor 				: darken($neutralcolor,25%);
+$darkneutralcolor 				: darken($neutralcolor,50%);
+$lightneutralcolor 				: lighten($neutralcolor,25%);
+$lighterneutralcolor 			: lighten($neutralcolor,50%);
+$lightestneutralcolor 			: lighten($neutralcolor,70%);
+
+// Sometimes you may want $black and $white to be ‘almost black’ and ’off-white’
+$black 							: rgb(0,0,0);
+$white 							: rgb(255,255,255);
+
+// Choose a colour for your hyperlinks. Often this will be the $primarycolor 
+$linkcolor 		    			: $primarycolor;
+$linkcolorhover 				: darken($linkcolor, 10);
+$linkcolorvisited   			: darken($linkcolorhover, 10);
+$linkcolorfocus 				: darken($linkcolorvisited, 10);
+
+// Now define another set of colours. These will be used to style alerts and buttons
+$alertcolor 					: rgb(218,79,73);
+$errorcolor 					: rgb(176,20,0);
+$infocolor 						: rgb(216,220,162);
+$inversecolor 					: rgb(65,65,65);
+$successcolor 					: rgb(188,212,222);
+$warningcolor 					: $errorcolor;
+
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $red;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+// Now set values for your responsive design breakpoints
+// Ems are default, but you may use px if you prefer
+// Five are included but you may add more
+
+// 480px 	30em
+// 600px 	37.5em
+// 768px 	48em
+// 992px 	62em
+// 1382px	86.375em
+ 
+$bp2 							: 30em;  		
+$bp3 							: 37.5em;  	
+$bp4 							: 48em;  		
+$bp5 							: 62em; 		
+$bp6 							: 86.375em; 
+
+
+// STEP FOUR: TEXTURE ================================================
+
+// Next set variables for your design’s borders. 
+// These will be inherited by many Rock Hammer elements below 
+$bordercolor    				: $lighterneutralcolor;
+$borderstyle					: solid;
+$borderwidth 					: 1px;
+$borderradius 					: 4px;
+
+// NAVIGATION =============================================================================
+
+// =navigation
+
+// By default site navigation has a flat background colour
+// Add an optional gradient in __navigation-toggle.scss
+// Configure the gradient colours in _texture.scss
+$navigationbackgroundcolor 		: $tertiarycolor;
+
+// Set navigation items’ bottom border width
+$navigationborderwidth			: $borderwidth;
+
+// Set navigation items’ bottom border style
+$navigationborderstyle			: $borderstyle;
+
+// Set navigation items’ bottom border colour
+$navigationbordercolor 			: darken($navigationbackgroundcolor,10%);
+
+// Set navigation items’ link colours
+$navigationlinkcolor			: $white;
+
+// :hover
+$navigationlinkcolorhover		: darken($navigationlinkcolor,10%);
+
+// =navbar ============
+
+// Set navbar’s min-height
+$navbarheight					: 44px;
+
+// By default Navbars have a flat background colour
+// Add an optional gradient in _bootstrap-navbar.scss
+// Configure the gradient colours in _texture.scss
+$navbarbackgroundcolor			: lighten($neutralcolor,75%);
+
+// Set navbar’s border width
+$navbarborderwidth				: $borderwidth * 2;
+
+// Set navbar’s’ border style
+$navbarborderstyle				: $borderstyle;
+
+// By default navbar’s border is a tint of $navbarbackgroundcolor. Adjust percentage as required
+$navbarbordercolor 				: darken($navbarbackgroundcolor,10%);
+
+// Set navbar’s border radius. Default is $borderradius defined above
+$navbarborderradius				: $borderradius;
+
+// Set navbar’s text colour
+$navbarcolor					: $textcolor;
+
+// Set navbar’s brand colour
+$navbarbrandcolor				: $primarycolor;
+
+// Set navbar’s link colours
+$navbarlinkcolor				: $linkcolor;
+
+// :hover
+$navbarlinkbackgroundcolorhover : rgba($navbarlinkcolor,.25);
+$navbarlinkcolorhover			: $textcolor;
+
+// :hover
+$navbarlinkbackgroundcoloractive: $primarycolor;
+$navbarlinkcoloractive			: $white;
+
+// Set navbar’s divider colour
+$navbardividerleft				: $navbarbordercolor;
+$navbardividerright				: lighten($navbarbordercolor,10%);
+
+// MISC =============================================================================
+
+// Set a default duration for CSS transitions
+$transitionduration				: .25s;
+
+

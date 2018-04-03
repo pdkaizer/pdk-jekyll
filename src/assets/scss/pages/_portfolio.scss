@@ -1,0 +1,60 @@
+.portfolio-area {
+	@include container;
+		margin-top: 1.5em;
+  		margin-bottom: 2.5em;
+    @include breakpoint($mobile) {
+      	margin-top: 0;
+      	margin-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.portfolio-area h1 {
+	font-family: $condensed-font-family;
+    font-weight: bold;
+}
+
+.portfolio {
+	@include push(1);
+	@include span(11 last);
+}
+
+.portfolio-section {
+	border-bottom: solid 1px $medium-gray;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+.portfolio-section:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.portfolio-image {
+	@include span(7);
+		img {
+			border: 1px solid $medium-gray;
+			padding: 2px;
+		}
+    @include breakpoint($mobile) {
+      @include span(12);
+    }
+}
+
+.portfolio-text {
+	@include span(5 last);
+		h2 {
+			color: $medium-gray;
+  			font-family: $condensed-font-family;
+  			font-weight: bold;
+		}
+	@include breakpoint($mobile) {
+      @include span(12);
+    }
+}
+
+
+
+
+
