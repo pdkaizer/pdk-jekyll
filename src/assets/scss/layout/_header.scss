@@ -1,6 +1,6 @@
 header {
-	background-color: $secondarycolor;
-	color: $white;
+	background-color: $light-gray;
+	color: $dark-gray;
 	padding-top: 5px;
 	padding-bottom: 0;
 }
@@ -10,7 +10,7 @@ header {
 }
 
 .header-logo {
-	@include span(1); 
+	@include span(1);
 		@include breakpoint($mobile) {
 			@include span(2);
 			padding-left: 5px;
@@ -28,7 +28,7 @@ header {
 			font-weight: bold;
 			padding-top: 0;
 			padding-bottom: 0;
-			line-height: 0;	
+			line-height: 0;
 		}
 
 		h4 {
@@ -36,7 +36,7 @@ header {
 			font-weight: bold;
 			padding-top: 3px;
 			padding-bottom: 0;
-			line-height: 0;	
+			line-height: 0;
 			letter-spacing: .16em;
 		}
 		@include breakpoint($mobile) {
@@ -48,21 +48,21 @@ header {
 					font-weight: bold;
 					padding-top: 0;
 					padding-bottom: 0;
-					line-height: 0;	
-				}	
+					line-height: 0;
+				}
 
 				h4 {
 					font-weight: bold;
 					padding-top: 3px;
 					padding-bottom: 0;
-					line-height: 0;	
+					line-height: 0;
 					letter-spacing: 0;
 				}
 		}
 }
 
 .header-name a {
-	color: $white;
+	color: $dark-gray;
 }
 
 .header-name-left {
@@ -83,7 +83,7 @@ header {
 		@include breakpoint($mobile) {
 			@include span(12 last);
 			margin-top: .25em;
-			padding-left: .5em;      		
+			padding-left: .5em;
 			padding-right: .5em;
 		}
 }
@@ -106,5 +106,5 @@ header {
 }
 
 .header-nav a {
-	color: $white;
+	color: $dark-gray;
 }

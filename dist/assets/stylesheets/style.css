@@ -662,8 +662,8 @@ div#multiColumn {
 # Layout styles
 --------------------------------------------------------------*/
 header {
-  background-color: #4a4a4a;
-  color: white;
+  background-color: #ddd;
+  color: #4a4a4a;
   padding-top: 5px;
   padding-bottom: 0; }
 
