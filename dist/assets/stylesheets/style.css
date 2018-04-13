@@ -731,7 +731,7 @@ header {
         letter-spacing: 0; } }
 
 .header-name a {
-  color: white; }
+  color: #4a4a4a; }
 
 @media (min-width: 280px) and (max-width: 650px) {
   .header-name-left {
@@ -775,7 +775,7 @@ header {
       font-size: 14px; } }
 
 .header-nav a {
-  color: white; }
+  color: #4a4a4a; }
 
 footer {
   background-color: #4a4a4a;
