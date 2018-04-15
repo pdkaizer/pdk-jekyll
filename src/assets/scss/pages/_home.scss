@@ -35,8 +35,8 @@
 }
 
 .home-article-listing h1 {
-	font-family: $condensed-font-family;
-    font-weight: bold;
+	font-family: $heading-font-family;
+    font-weight: 300;
 }
 
 .home-see-all {
@@ -44,8 +44,8 @@
 }
 
 .home-see-all h3 {
-    font-family: $condensed-font-family;
-    font-weight: bold;
+    font-family: $heading-font-family;
+    font-weight: 300;
 }
 
 .home-post {
@@ -54,9 +54,9 @@
 		h2 {
 			margin-bottom: 0;
 			padding-bottom: 0;
-			font-family: $condensed-font-family;
-			font-weight: bold;
-			font-size: 18px;
+			font-family: $heading-font-family;
+			font-weight: 300;
+			font-size: 22px;
 		}
 		@include breakpoint($mobile) {
 			@include span(12 last);
@@ -69,9 +69,9 @@
 	background-color: $light-gray;
 	border: solid 2px $medium-gray;
 	color: $medium-gray;
-	font-size: .9em;
+	font-size: .8em;
 	font-family: $condensed-font-family;
-	font-weight: bold;
+	font-weight: 300;
 	padding: 1px;
 	text-align: center;
 }

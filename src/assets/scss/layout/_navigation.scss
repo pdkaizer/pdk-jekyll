@@ -6,7 +6,7 @@ a.menu-link {
 		}
 		nav[role=navigation] {
 			clear: both;
-			-webkit-transition: all 0.3s ease-out;  
+			-webkit-transition: all 0.3s ease-out;
 			-moz-transition: all 0.3s ease-out;
 			-ms-transition: all 0.3s ease-out;
 			-o-transition: all 0.3s ease-out;
@@ -29,7 +29,7 @@ a.menu-link {
 			padding: 0.8em;
 			border-bottom: 1px solid #808080;
 		}
-		
+
 		@media screen and (min-width: 48.25em) {
 			a.menu-link {
 			   display: none;
@@ -41,10 +41,10 @@ a.menu-link {
 				margin: 0 0 0 -0.25em;
 				border: 0;
 			}
-			
+
 			nav[role=navigation]  li {
 				display: inline-block;
-				margin: 0 0.25em;
+				margin: 0 0.15em;
 			}
 			nav[role=navigation] li a {
 				border: 0;

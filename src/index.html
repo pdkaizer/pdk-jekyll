@@ -1,6 +1,6 @@
 ---
 layout: default
-header-image: pdk-chevy-bolt.jpg
+header-image: brooklyn-b-w-2018-03.jpg
 ---
 {% include header-image.html %}
 
@@ -19,13 +19,13 @@ header-image: pdk-chevy-bolt.jpg
 
     <p>Also check out my <a href="http://books.peterkaizer.com/">recommended books site</a>.</p>
 
-    {% include social.html %} 
+    {% include social.html %}
   </article>
 
   <section class ="home-article-listing" id="follow">
 
     <h1>Reading & Writing</h1>
-            
+
       {% for post in paginator.posts %}
         {% if post.type == 'link' %}
         <div class="home-post">

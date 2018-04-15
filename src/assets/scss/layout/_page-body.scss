@@ -24,8 +24,8 @@
 	@include span(8 last);
     padding-left: 1em;
     h1 {
-      font-family: $condensed-font-family;
-      font-weight: bold;
+      font-family: $heading-font-family;
+      font-weight: 300;
     }
     @include breakpoint($mobile) {
       @include span(12);
@@ -64,10 +64,10 @@ article p {
 }
 
 .post-content {
-  @include span(9 of 12);
-      h1, h2 {
-      font-family: $condensed-font-family;
-      font-weight: bold;
+  @include span(12);
+      h1, h2, h3 {
+      font-family: $heading-font-family;
+      font-weight: 300;
     }
       @include breakpoint($mobile) {
         @include span(12);
@@ -81,7 +81,8 @@ article p {
   border: solid 2px $medium-gray;
   color: $medium-gray;
   font-family: $condensed-font-family;
-  font-weight: bold;
+  font-size: .8em;
+  font-weight: 300;
   padding: 1px;
   text-align: center;
 }
