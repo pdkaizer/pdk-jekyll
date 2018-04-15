@@ -19,7 +19,7 @@ This is my personal web space, where I post about technology, design and food, a
 
 ### Publishing
 
-The site is published using the [Jekyll](https://jekyllrb.com/) static site generator. The site is typset in Open Sans and Open Sans Condensed served from [Google Fonts](https://fonts.google.com/). This site is hosted as a static website in an [Amazon Web Services (AWS)](https://aws.amazon.com/) [S3](https://aws.amazon.com/s3/?p=tile) bucket and served securly via [https](https://en.wikipedia.org/wiki/HTTPS) and AWS [Cloudfront](https://aws.amazon.com/cloudfront/?p=tile). I also use AWS [Route 53](https://aws.amazon.com/route53/?p=tile) for DNS management.
+The site is published using the [Jekyll](https://jekyllrb.com/) static site generator. The site is typset in Source Sans Pro and Playfair Display served from [Google Fonts](https://fonts.google.com/). This site is hosted as a static website in an [Amazon Web Services (AWS)](https://aws.amazon.com/) [S3](https://aws.amazon.com/s3/?p=tile) bucket and served securly via [https](https://en.wikipedia.org/wiki/HTTPS) and AWS [Cloudfront](https://aws.amazon.com/cloudfront/?p=tile). I also use AWS [Route 53](https://aws.amazon.com/route53/?p=tile) for DNS management.
 
 ###Coding and code
 

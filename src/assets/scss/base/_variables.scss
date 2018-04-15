@@ -1,18 +1,22 @@
 // Google Fonts
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,400i,700';
+//@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,400i,700';
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Source+Sans+Pro:300,400,400i,700');
 
 // Typography
-$base-font-family: 'Open Sans', sans-serif;
-$heading-font-family: 'Open Sans', sans-serif;
-$condensed-font-family: 'Open Sans Condensed', sans-serif;
+$base-font-family: 'Source Sans Pro', sans-serif;
+$heading-font-family: 'Playfair Display', serif;
+$condensed-font-family: 'Source Sans Pro', sans-serif;
+//$base-font-family: 'Open Sans', sans-serif;
+//$heading-font-family: 'Open Sans', sans-serif;
+//$condensed-font-family: 'Open Sans Condensed', sans-serif;
 $basefontsize: 16;
 
 $bodycolor 						: rgb(255,255,255);
 $textcolor 						: rgb(71,63,63);
 
 // Font Sizes
-$base-font-size: 1em;
-$baselineheight: 1.5em;
+$base-font-size: 1.2em;
+$baselineheight: 1.7em;
 $gutterwidth: 24px;
 
 // Line height
@@ -54,7 +58,7 @@ $lightestneutralcolor 			: lighten($neutralcolor,70%);
 $black 							: rgb(0,0,0);
 $white 							: rgb(255,255,255);
 
-// Choose a colour for your hyperlinks. Often this will be the $primarycolor 
+// Choose a colour for your hyperlinks. Often this will be the $primarycolor
 $linkcolor 		    			: $primarycolor;
 $linkcolorhover 				: darken($linkcolor, 10);
 $linkcolorvisited   			: darken($linkcolorhover, 10);
@@ -98,18 +102,18 @@ $base-timing: ease;
 // 768px 	48em
 // 992px 	62em
 // 1382px	86.375em
- 
-$bp2 							: 30em;  		
-$bp3 							: 37.5em;  	
-$bp4 							: 48em;  		
-$bp5 							: 62em; 		
-$bp6 							: 86.375em; 
+
+$bp2 							: 30em;
+$bp3 							: 37.5em;
+$bp4 							: 48em;
+$bp5 							: 62em;
+$bp6 							: 86.375em;
 
 
 // STEP FOUR: TEXTURE ================================================
 
-// Next set variables for your design’s borders. 
-// These will be inherited by many Rock Hammer elements below 
+// Next set variables for your design’s borders.
+// These will be inherited by many Rock Hammer elements below
 $bordercolor    				: $lighterneutralcolor;
 $borderstyle					: solid;
 $borderwidth 					: 1px;

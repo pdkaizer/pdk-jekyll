@@ -11,8 +11,8 @@
 }
 
 .portfolio-area h1 {
-	font-family: $condensed-font-family;
-    font-weight: bold;
+	font-family: $heading-font-family;
+    font-weight: 300;
 }
 
 .portfolio {
@@ -46,8 +46,8 @@
 	@include span(5 last);
 		h2 {
 			color: $medium-gray;
-  			font-family: $condensed-font-family;
-  			font-weight: bold;
+  			font-family: $heading-font-family;
+  			font-weight: 300;
 		}
 	@include breakpoint($mobile) {
       @include span(12);
