@@ -78,6 +78,8 @@
 
 .external {
 	border-left: solid 8px $light-gray;
+	margin-bottom: 0;
+	padding-bottom: 0;
 	padding-left: .8em;
 		@include breakpoint($tablet) {
 			margin: 3px 0px 0px 0px;
