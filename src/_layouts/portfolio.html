@@ -2,15 +2,13 @@
 layout: default
 ---
 
-{% include header-image.html %}
-
 <div class="portfolio-area">
-	<div class="portfolio">	
-	
+	<div class="portfolio">
+
 		<h1>{{ page.title }}</h1>
 
 		{{ content }}
-	
+
 
 		{% for portfolio-item in page.portfolio-items %}
 		<div class="portfolio-section clearfix">
@@ -21,7 +19,7 @@ layout: default
 			<section class="portfolio-text">
 				<h2>{{portfolio-item.title}}</h2>
 				{{portfolio-item.text}}
-				
+
 				<p><strong>Type:</strong> {{portfolio-item.filter}}</p>
 				<p><strong>Skills:</strong> {{portfolio-item.skills}}</p>
 				<p><strong>Role:</strong> {{portfolio-item.role}}</p>

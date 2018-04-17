@@ -3,7 +3,7 @@ layout: link
 title: "Iterative Design, Iterative Code"
 type: link
 link: http://bradfrost.com/blog/post/a-code-review-or-yet-another-reason-to-love-the-web/
-summary: Great post from Brad Frost on getting feedback from the indie web community and particularly from Jonathan Snook. this quote resonates with me, "Establishing this more collaborative, pattern-driven workflow means iterating over frontend code becomes a core and necessary part of the process."
+summary: Great post from Brad Frost on getting feedback from the indie web community and particularly from Jonathan Snook. this quote resonates with me, <blockquote class="external">"Establishing this more collaborative, pattern-driven workflow means iterating over frontend code becomes a core and necessary part of the process."</blockquote>
 
 ---
 

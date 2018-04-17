@@ -18,9 +18,9 @@ title: Reading & Writing
                 <div class="home-post">
                   <h2><a href="{{ post.link }}">{{ post.title }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></h2>
                   <span class="visible-phone mobile-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}</span>
-                  <blockquote class="external">{{ post.summary }}<br>
+                  <p>{{ post.summary }}<br>
                   <a href="{{ post.url }}">(Permalink)</a>
-                  </blockquote>
+                  </p>
                 </div>
                 <div class="home-post-date visible-desktop">
                   <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}

@@ -1,6 +1,6 @@
 .resume {
 	@include push(1);
-	@include span(8);
+	@include span(10);
 }
 
 .resume section {
@@ -8,7 +8,7 @@
 }
 
 .resume section h2, h3, h4 {
-	font-weight: bold;
+	font-weight: 300;
 }
 
 .resume section ul {
@@ -18,10 +18,6 @@
 
 .resume-print a {
 	color: $white;
-}
-
-.skills-grid {
-
 }
 
 .skills-col-1 {
