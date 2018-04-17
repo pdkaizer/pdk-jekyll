@@ -6,7 +6,7 @@ layout: default
 
 <div class="page-area">
 	<section class="left-side">
-		{% include social.html %} 
+		{% include social.html %}
 	</section>
 
 	<section class="article-area">
@@ -17,17 +17,17 @@ layout: default
 
 			<h2 itemprop="name headline"><a href="{{ post.link }}">{{ post.title }}{{ page.title }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></h2>
 
-	    	<blockquote class="external">{{ content }}</blockquote>
-				
+	    	{{ content }}
+
 			</div>
-	    	
+
 	    	<div class="post-meta">
 	    		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
 	    	</div>
 
 		</article>
 
-		{% include comments.html %} 
+		{% include comments.html %}
 
 	</section>
 </div>

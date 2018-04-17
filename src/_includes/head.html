@@ -6,7 +6,7 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  
+
   <!-- Pinterest -->
   <meta name="p:domain_verify" content="d30bf240ff80dc3751633df9d93b85b9"/>
 
@@ -39,8 +39,8 @@
   <![endif]-->
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/touch/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- RSS -->
   {% feed_meta %}
