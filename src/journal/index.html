@@ -6,9 +6,6 @@ title: Reading & Writing
 {% include header-image.html %}
 
 <div class="page-area">
-    <section class="left-side">
-        {% include social.html %}
-    </section>
 
     <section class="article-area">
         <article itemscope itemtype="http://schema.org/BlogPosting">
@@ -16,23 +13,24 @@ title: Reading & Writing
               {% for post in site.posts %}
                 {% if post.type == 'link' %}
                 <div class="home-post">
-                  <h2><a href="{{ post.link }}">{{ post.title }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></h2>
-                  <span class="visible-phone mobile-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}</span>
-                  <p>{{ post.summary }}
-                  <a href="{{ post.url }}">(Permalink)</a>
-                  </p>
+                  <h2><a href="{{ post.link }}">{{ post.title }}&nbsp;<i class="far fa-external-link" aria-hidden="true"></i></a></h2>
+                  <span class="visible-phone mobile-date"><i class="far fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}</span>
+                  <p>{{ post.summary }}</p>
+
+                  <p><a href="{{ post.url }}">(Permalink)</a></p>
+
                 </div>
                 <div class="home-post-date visible-desktop">
-                  <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}
+                  <i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}
                 </div>
                 {% else %}
                 <div class="home-post">
                   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                  <span class="visible-phone mobile-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}</span>
+                  <span class="visible-phone mobile-date"><i class="far fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}</span>
                   <p>{{ post.summary }}</p>
                 </div>
                 <div class="home-post-date visible-desktop">
-                  <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}
+                  <i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}
                 </div>
                 {% endif %}
               {% endfor %}

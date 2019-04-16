@@ -1,12 +1,12 @@
 footer {
-	background-color: $secondarycolor;
-	color: $white;
+	background-color: $light-gray;
+	color: $tertiarycolor;
 	padding-top: 1.25em;
 	padding-bottom: 1.22em;
 }
 
 footer a {
-	color: $white;
+	color: $tertiarycolor;
 }
 
 .footer-container {
@@ -16,4 +16,65 @@ footer a {
 			padding-left: 1em;
       		padding-right: 1em;
 		}
+}
+
+.footer-col-1 {
+	@include span(6 of 12);
+	@include breakpoint($mobile) {
+		@include span(12);
+		  padding-left: 1em;
+		  padding-right: 1em;
+	}
+}
+
+.footer-col-2 {
+	@include span(3 of 12);
+	@include breakpoint($mobile) {
+		@include span(12);
+		  padding-left: 1em;
+		  padding-right: 1em;
+	}
+}
+
+.footer-col-3 {
+	@include span(3 of 12 last);
+	@include breakpoint($mobile) {
+		@include span(12);
+		  padding-left: 1em;
+		  padding-right: 1em;
+	}
+}
+
+.coffee-button {
+	margin-top: 20px;
+  }
+
+  .social a {
+	text-decoration: none; }
+
+  .social ul li {
+	float: left;
+	list-style-type: none;
+	margin-left: 0;
+	margin-right: 5px;
+	margin-bottom: 10px; }
+
+  .social p {
+	font-size: .85em;
+	clear: both;
+  }
+
+.built-with {
+	width: 245px;
+	float: left;
+}
+
+.hosted {
+	width: 225px;
+	float: right;
+}
+
+.footer-logo {
+	float:left;
+	margin-right: 15px;
 }

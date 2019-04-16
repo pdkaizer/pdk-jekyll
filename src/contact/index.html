@@ -7,9 +7,6 @@ header-image: typewriter.jpg
 {% include header-image.html %}
 
 <div class="page-area">
-    <section class="left-side">
-        {% include social.html %} 
-    </section>
 
     <section class="article-area">
         <article itemscope itemtype="//schema.org/BlogPosting">
@@ -18,23 +15,26 @@ header-image: typewriter.jpg
 
           <p>You can contact me using the form below.</p>
 
-                <form accept-charset="UTF-8" action="//formkeep.com/f/bc39663a56cd" method="POST" role="form">
-          			<input type="hidden" name="utf8" value="✓">
-                
-                <label for="name">Name:</label>
-                  <input type="email" name="name" placeholder="Your Name">
+<div id="wufoo-m1ov9we50jmzyvo">
 
-                <label for="email">Email:</label>
-                  <input type="email" name="email" placeholder="Email">
+<script type="text/javascript">var m1ov9we50jmzyvo;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'pdkaizer',
+'formHash':'m1ov9we50jmzyvo',
+'autoResize':true,
+'height':'517',
+'async':true,
+'host':'wufoo.com',
+'header':'hide',
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { m1ov9we50jmzyvo = new WufooForm();m1ov9we50jmzyvo.initialize(options);m1ov9we50jmzyvo.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
 
-                <label for="url">URL:</label>
-                  <input type="url" name="url" placeholder="Your Website">
 
-                <label for="message">Message:</label>
-                  <textarea class="form-control" name="message" placeholder="Your message here..." rows="5"></textarea>
-                <button type="submit" class="btn btn-default">Contact me</button>
-
-                </form>
 
         </article>
     </section>

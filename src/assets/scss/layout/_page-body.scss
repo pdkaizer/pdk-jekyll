@@ -11,8 +11,7 @@
 }
 
 .left-side {
-  @include push(1);
-  @include span(3);
+  @include span(4);
     @include breakpoint($mobile) {
       @include span(12);
         padding-left: 1em;
@@ -21,7 +20,8 @@
 }
 
 .article-area {
-	@include span(8 last);
+  @include push(1);
+	@include span(9);
     padding-left: 1em;
     h1 {
       font-family: $heading-font-family;
@@ -45,24 +45,6 @@ article p {
   	}
 }
 
-.social {
-  margin-top: 30px;
-}
-
-.social a {
-  text-decoration: none; }
-
-.social ul li {
-  float: left;
-  list-style-type: none;
-  margin-right: 10px;
-  margin-bottom: 10px; }
-
-.social p {
-	font-size: .70em;
-  clear: both;
-}
-
 .post-content {
   @include span(12);
       h1, h2, h3 {
@@ -75,16 +57,16 @@ article p {
 }
 
 .post-meta {
-  @include push(1)
-  @include span(2 last);
-  background-color: $light-gray;
-  border: solid 2px $medium-gray;
-  color: $medium-gray;
-  font-family: $condensed-font-family;
-  font-size: .8em;
-  font-weight: 300;
+  /*@include push(1)
+  @include span(2 last);*/
+	background-color: $white;
+	/*border-bottom: solid 2px $primarycolor ;*/
+	color: $dark-gray;
+	/*font-size: .8em;*/
+	font-family: $condensed-font-family;
+	font-weight: 300;
   padding: 1px;
-  text-align: center;
+  margin-bottom: 1em;
 }
 
 .comment-area {

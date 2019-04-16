@@ -1,6 +1,6 @@
 ---
 layout: default
-header-image: capital-03-2029.jpg
+header-image: DC-cherry-blossoms-2019.jpg
 ---
 {% include header-image.html %}
 
@@ -9,43 +9,42 @@ header-image: capital-03-2029.jpg
 <div class="page-area">
 
   <article class="home-main">
-    <h1>Hi there, I am Peter Kaizer</h1>
+    <h2>Hi there, I am Peter Kaizer</h2>
 
-    <p>I am a user experience designer and developer with a passion for user focused digital products that are highly functional and beautifully designed.</p>
+    <p>I am a designer & developer with a passion for user focused digital products that are highly functional and beautifully designed.</p>
 
-    <p>Currently I am working as a Lead Technologist/UXUI Designer for <a href="http://www.boozallen.com/">Booz | Allen | Hamilton</a>.</p>
+    <p>My current job is Senior Designer for <a href="http://www.boozallen.com/">Booz | Allen | Hamilton</a> where I currently am doing design work for the <a href="https://www.usps.com/">USPS</a>.</p>
 
     <p>This is my personal web space, where I post about technology, design and food, along with other things that catch my eye.  You can read more <a href="/about">about me</a> or <a href="/contact">contact me</a>.</p>
 
     <p>Also check out my <a href="http://books.peterkaizer.com/">recommended books site</a>.</p>
 
-    {% include social.html %}
   </article>
 
   <section class ="home-article-listing" id="follow">
 
-    <h1>Reading & Writing</h1>
+    <h1>Latest reading & writing</h1>
 
       {% for post in paginator.posts %}
         {% if post.type == 'link' %}
         <div class="home-post">
-          <h2><a href="{{ post.link }}">{{ post.title }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></h2>
-          <span class="visible-phone mobile-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}</span>
+          <h2><a href="{{ post.link }}">{{ post.title }}&nbsp;<i class="far fa-external-link"></i></a></h2>
+          <span class="visible-phone mobile-date"><i class="far fa-external-link"></i> {{ post.date | date: "%b %e, %Y" }}</span>
           <p>{{ post.summary }}
           <a href="{{ post.url }}">(Permalink)</a>
           </p>
         </div>
         <div class="home-post-date visible-desktop">
-          <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}
+          <i class="far fa-calendar-alt"></i> {{ post.date | date: "%b %e, %Y" }}
         </div>
         {% else %}
         <div class="home-post">
           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <span class="visible-phone mobile-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}</span>
+          <span class="visible-phone mobile-date"><i class="far fa-calendar-alt"></i> {{ post.date | date: "%b %e, %Y" }}</span>
           <p>{{ post.summary }}</p>
         </div>
         <div class="home-post-date visible-desktop">
-          <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%b %e, %Y" }}
+          <i class="far fa-calendar-alt"></i> {{ post.date | date: "%b %e, %Y" }}
         </div>
         {% endif %}
       {% endfor %}

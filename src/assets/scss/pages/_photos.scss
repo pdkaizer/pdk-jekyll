@@ -1,5 +1,5 @@
 .photos {
-	background-color: $secondarycolor;
+	background-color: $white;
 }
 
 .photo-page-area {
@@ -29,7 +29,7 @@
 }
 
 .photos-grid a {
-  color: $white;
+  color: $medium-gray;
 }
 
 /* General photoset style */
@@ -56,7 +56,7 @@
     position: relative;
 }
 .photoset figcaption {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: $medium-gray;
     box-sizing: border-box;
     font-size: .75rem;
     padding: .5rem;
@@ -90,14 +90,14 @@
 
 @media screen
 and (min-width: 480px)
-and (max-width: 768px) { 
+and (max-width: 768px) {
   .photoset figcaption {
     display: none;
   }
 }
 
 @media screen
-and (max-width: 480px) { 
+and (max-width: 480px) {
   .photoset .photoset-row {
     width: 100%;
   }

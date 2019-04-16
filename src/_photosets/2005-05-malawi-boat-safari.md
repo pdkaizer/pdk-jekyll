@@ -1,7 +1,7 @@
 ---
 layout: photoset
-title: "Malawi Boat safari photoset"
-summary: 
+title: "Malawi Boat safari"
+summary:
 permalink: /photos/malawi-boat-safari/
 date: May, 2005
 tag: photos
@@ -37,7 +37,7 @@ A boat safari in Malawi in Southern Africa.
             <a href=""><img src="/images/photos/{{page.photoset-name}}/{{page.photo-2}}.jpg" class="img-responsive" alt="" title="" />
             <figcaption></figcaption></a>
         </figure>
-    </div>    
+    </div>
     <div class="photoset-row">
         <figure class="photoset-item">
             <a href=""><img src="/images/photos/{{page.photoset-name}}/{{page.photo-3}}.jpg" class="img-responsive" alt="" title="" />

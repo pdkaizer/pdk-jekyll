@@ -17,4 +17,5 @@ As a designer who is always wanting to do a design overhaul of my site this piec
 
 <blockquote class="external">"Try to enjoy the process and embrace the chaos!"</blockquote>
 
+
 [Read the full post](https://veerle.duoh.com/design/how-the-design-of-my-new-blog-came-to-live)

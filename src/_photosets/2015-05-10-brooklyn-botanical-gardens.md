@@ -1,7 +1,7 @@
 ---
 layout: photoset
-title: "Brooklyn Botanical Gardens photoset"
-summary: 
+title: "Brooklyn Botanical Gardens"
+summary:
 permalink: /photos/brooklyn-botanical-gardens/
 date: May 10, 2015
 tag: photos

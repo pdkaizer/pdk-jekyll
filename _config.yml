@@ -17,8 +17,8 @@ author:
   email: pdkaizer@gmail.com
   uri: index.html
   bio: Designer/Developer
-  twitter:
-  github:
+  twitter: pdkaizer
+  github:  pdkaizer
 
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts
@@ -31,7 +31,7 @@ limit_posts: 50
 
 # Permalink structure and pagination options
 permalink: pretty
-paginate: 5
+paginate: 3
 paginate_path: 'page:num'
 excerpt_separator: ''
 

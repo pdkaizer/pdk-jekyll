@@ -5,9 +5,6 @@ layout: default
 {% include header-image.html %}
 
 <div class="page-area">
-	<section class="left-side">
-		{% include social.html %}
-	</section>
 
 	<section class="article-area">
 
@@ -15,15 +12,19 @@ layout: default
 
 			<div class="post-content" itemprop="articleBody">
 
-			<h2 itemprop="name headline"><a href="{{ post.link }}">{{ post.title }}{{ page.title }}</a></h2>
+			<h1 itemprop="name headline"><a href="{{ post.link }}">{{ post.title }}{{ page.title }}</a></h1>
+
+			<span class="visible-phone mobile-date">
+				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="far fa-calendar-alt"></i> {{ page.date | date: "%b %-d, %Y" }}</time>
+			</span>
+
+	    	<div class="post-meta visible-desktop">
+	    		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="far fa-calendar-alt"></i> {{ page.date | date: "%b %-d, %Y" }}</time>
+	    	</div>
 
 	    	{{ content }}
 
 			</div>
-
-	    	<div class="post-meta">
-	    		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-	    	</div>
 
 		</article>
 

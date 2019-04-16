@@ -8,8 +8,8 @@
 }
 
 .home-main {
-	@include push(1);
-	@include span(3 of 12);
+	@include span(4 of 12);
+		padding-left: 1em;
 		@include breakpoint($mobile) {
 			@include span(12);
       		padding-left: 1em;
@@ -62,21 +62,6 @@
 			@include span(12 last);
 		}
 }
-
-/*
-.home-post-date {
-	@include push(1)
-	@include span(2 last);
-	background-color: $light-gray;
-	border: solid 2px $medium-gray;
-	color: $medium-gray;
-	font-size: .8em;
-	font-family: $condensed-font-family;
-	font-weight: 300;
-	padding: 1px;
-	text-align: center;
-}
-*/
 
 .home-post-date {
 	@include push(1)
