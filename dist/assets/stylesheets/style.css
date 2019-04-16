@@ -606,6 +606,7 @@ div#multiColumn {
   display: table;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .visible-phone,
@@ -1193,6 +1194,7 @@ nav[role=navigation] li a {
   bottom: 0;
   left: 0;
   width: 100%;
+  -webkit-transform: translateY(100%);
   transform: translateY(100%);
   transition: all .5s ease-in-out; }
 
@@ -1206,6 +1208,7 @@ nav[role=navigation] li a {
   height: 100%; }
 
 .photoset .photoset-item:hover a + figcaption {
+  -webkit-transform: translateY(0);
   transform: translateY(0); }
 
 .photoset img {
@@ -1226,6 +1229,7 @@ nav[role=navigation] li a {
     margin: 0 0 .75em 0; }
   .photoset figcaption {
     display: block;
+    -webkit-transform: none;
     transform: none;
     position: relative; }
   .photoset img {
